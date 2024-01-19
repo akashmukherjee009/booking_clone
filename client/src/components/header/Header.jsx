@@ -33,6 +33,7 @@ const handleOption = (name, operation) =>{
   }})
 }
 const handleSearch=  ()=>{
+  // dispatch({ type: "NEW_SEARCH", payload: { destination, dates, options } });
       navigate("/hotels", {state: {destination,date, Options}})
 }
 
