@@ -14,7 +14,7 @@ const connect = async()=>{
 try {
     await mongoose.connect(process.env.MONGO)
     
-    console.log("Database Connected.............");
+    console.log("Database is ready to Connect.............");
   } catch (error) {
     throw error
   }
@@ -53,7 +53,7 @@ app.use((err, req, res, next)=>{
 })
 
 
-app.listen(2021 ,()=>{
+app.listen(5000 ,()=>{
     connect()
     console.log("Server Started...........");
 })
